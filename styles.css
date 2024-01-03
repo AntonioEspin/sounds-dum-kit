@@ -49,3 +49,27 @@ kbd {
   letter-spacing: .1rem;
   color: #ffc600;
 }
+
+@media screen and (max-width: 480px) {
+  .keys {
+    /* Cambia la dirección del flexbox para apilar verticalmente las teclas */
+    flex-direction: column;
+  }
+
+  .key {
+    /* Ajusta el ancho de las teclas para ocupar el 80% del contenedor */
+    width: 80%;
+    /* Ajusta el margen para centrar las teclas */
+    margin: 0.5rem auto;
+  }
+
+  kbd {
+    /* Reduce el tamaño del texto del teclado */
+    font-size: 3rem;
+  }
+
+  .sound {
+    /* Ajusta el tamaño del texto del sonido */
+    font-size: 1rem;
+  }
+}
